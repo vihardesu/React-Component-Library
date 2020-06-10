@@ -1,5 +1,13 @@
 import React from 'react'
 import styled, {css} from 'styled-components';
+import breakpoints from './breakpoints'
+
+export const background = css`
+    background: rgb(225,253,255);
+`
+export const color = css`
+    background: black;
+`
 
 export const flex_col_center = css`
     display: flex;

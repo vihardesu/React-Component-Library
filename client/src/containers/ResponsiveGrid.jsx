@@ -10,12 +10,8 @@ const StyledGrid = styled.main`
     align-items: flex-start;
     height: 100%;
     width: 100%;
-
-    background: white;
     box-sizing: border-box;
     overflow: scroll;
-
-    border: 5px solid tomato;
 `;
 
 const StyledGridItem = styled.div`
@@ -30,7 +26,7 @@ const StyledGridItem = styled.div`
     border: 1px solid black;
 `;
 
-export default function GridContainer({children}) {
+export default function ResponsiveGridContainer({children}) {
     return (
         <StyledGrid>
             {children}
@@ -38,7 +34,7 @@ export default function GridContainer({children}) {
     )
 }
 
-export const GridItem = function({children}) {
+export const ResponsiveGridItem = function({children}) {
     return(
         <StyledGridItem>
             {children}

@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import ellipsis, {indent, fonting_header, fonting_scroll} from '../utilities/mixins.jsx'
 
+//To do!!
+
 export const StyledH1 = styled.h1`
     border: 1px solid black;
     ${fonting_header};
@@ -58,11 +60,5 @@ export default StyledP;
  * 
  * Overflowing Text: used in conjuction to present overflowing text as ... or clipped
  *     text-overflow: clip | ellipsis; white-space: nowrap; overflow: hidden;
- * 
- * 
- * 
- * 
- * 
- * 
  */
 
