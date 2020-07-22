@@ -1,25 +1,26 @@
 import React, {useContext} from 'react';
 import styled from 'styled-components';
 import TightContainer, {FittedContainer} from './containers/Viewports'
-import SingleBox from './containers/SingleBox'
-import BaseButton from './components/BaseButton'
-import StyledIcon from './components/Icon'
-import { FaBeer } from 'react-icons/fa';
+import Nivo from './components/Nivo'
+import PopoutMenu from './components/PopoutMenu'
+
+import RouterSwitch from './components/RouterSwitch'
+import {Route} from 'react-router-dom'
 
 function App() {
 
- 
   return (
+
     <FittedContainer>
-      <SingleBox>
-
-        <BaseButton>
-
-          <StyledIcon><FaBeer /></StyledIcon>  
-          <p>CLICK ME</p>
-        </BaseButton>
-      </SingleBox>
-      
+      <PopoutMenu/>
+      <RouterSwitch>
+        <Route path="/test">
+          <h1>Test</h1>
+        </Route>
+        <Route path="/">
+          <h1>Home</h1>
+        </Route>
+      </RouterSwitch>
     </FittedContainer>
   );
 }

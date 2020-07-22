@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { IconContext } from "react-icons";
 
 const icon_styles = { 
-    color: 'white',
+    color: 'black',
     height: '2em',
     width: '2em',
     textAlign: 'center'
